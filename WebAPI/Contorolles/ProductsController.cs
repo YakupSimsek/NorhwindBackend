@@ -15,7 +15,7 @@ namespace WebAPI.Contorolles
         {
             _productService = productservice;
         }
-        [HttpGet(template: "getall")]
+        [HttpGet(template: "getlist")]
         public IActionResult GetList()
         {
             var result = _productService.GetList();
@@ -48,7 +48,7 @@ namespace WebAPI.Contorolles
             return BadRequest(result.Message);
         }
 
-        [HttpGet(template: "add")]
+        [HttpPost(template: "add")]
         public IActionResult Add(Product product)
         {
            var result = _productService.add(product);
@@ -59,7 +59,7 @@ namespace WebAPI.Contorolles
             return BadRequest(result.Message);
         }
 
-        [HttpGet(template: "delete")]
+        [HttpPost(template: "delete")]
         public IActionResult Delete(Product product)
         {
             var result = _productService.delete(product);
@@ -70,7 +70,7 @@ namespace WebAPI.Contorolles
             return BadRequest(result.Message);
         }
 
-        [HttpGet(template: "update")]
+        [HttpPost(template: "update")]
         public IActionResult Update(Product product)
         {
             var result = _productService.delete(product);
