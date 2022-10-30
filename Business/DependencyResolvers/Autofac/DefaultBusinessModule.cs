@@ -3,7 +3,6 @@ using Business.Abstract;
 using Business.Concrete;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntitiyFramework;
-using DataAccess.Concrete.EntitiyFramework.Contexs;
 using System;
 using System.Collections.Generic;
 using System.Linq;

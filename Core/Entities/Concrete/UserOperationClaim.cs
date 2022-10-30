@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Concrete
-{
+namespace Core.Entities.Concrete
+{   
     public class UserOperationClaim : IEntity
     {
         public int Id { get; set; }
